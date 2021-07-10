@@ -1,0 +1,76 @@
+/* ******************** */
+/* Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+/* ******************** */
+/* CSS Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* ******************** */
+/* Root - Variables */
+:root {
+  --body-color: #185adb;
+  --primary-heading-font-family: "Open Sans", sans-serif;
+  --primary-heading-font-size: 7.5rem;
+  --primary-heading-font-color: #ffffff;
+  --thermometer-font-size: 12rem;
+}
+
+/* ******************** */
+/* Body */
+body {
+  height: 100vh;
+  background-color: var(--body-color);
+}
+/* ******************** */
+/* Main Container */
+.container {
+  width: 90%;
+
+  /* ******************** */
+}
+/* Thermometer */
+.thermometer {
+  font-size: var(--thermometer-font-size);
+}
+/* ******************** */
+/* Utility Classes */
+.primary-heading {
+  font-family: var(--primary-heading-font-family);
+  font-size: var(--primary-heading-font-size);
+  color: var(--primary-heading-font-color);
+  text-shadow: 2px 2px 4px rgb(255, 255, 255);
+  margin-bottom: 15px;
+  line-height: 8rem;
+}
+.d-flex {
+  display: flex;
+  flex-direction: row;
+}
+.align-items-center {
+  align-items: center;
+}
+.justify-content-center {
+  justify-content: center;
+}
+.flex-column {
+  flex-direction: column;
+}
+.flex-wrap {
+  flex-wrap: wrap;
+}
+.bold {
+  font-weight: bold;
+}
+.center {
+  text-align: center;
+}
+
+/* Media Query */
+@media screen and (max-device-width: 850px) {
+  .primary-heading {
+    font-size: 2.5rem;
+  }
+}
